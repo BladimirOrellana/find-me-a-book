@@ -4,9 +4,12 @@
   "private": true,
   "homepage": "https://bladimirorellana.github.io/find-me-a-book/",
   "dependencies": {
+    "axios": "^0.19.0",
     "gh-pages": "^2.1.1",
+    "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },
   "scripts": {
@@ -15,7 +18,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "sass": "node-sass src/assets/sass/main.scss src/assets/css/index.css -w"
   },
   "eslintConfig": {
     "extends": "react-app"
